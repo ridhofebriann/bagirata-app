@@ -201,6 +201,22 @@ function App() {
             </button>
           ))}
         </div>
+
+        {/* Footer Credit Desktop */}
+        <div
+          className={`mt-auto pt-6 border-t-4 ${isDarkMode ? "border-white" : "border-black"}`}
+        >
+          <p className="font-black text-xs uppercase tracking-wider mb-2 opacity-70">
+            Build By:
+          </p>
+          <div
+            className={`p-3 ${isDarkMode ? "bg-[#FF90E8] text-black" : "bg-white text-black"} border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}
+          >
+            <p className="font-black text-sm uppercase truncate">
+              M. Ridho Febrian
+            </p>
+          </div>
+        </div>
       </nav>
 
       <main className="flex-1 p-5 pt-24 md:pt-12 md:p-12 overflow-y-auto z-10">
@@ -392,6 +408,18 @@ function App() {
             </motion.div>
           )}
         </AnimatePresence>
+
+        {/* Footer Credit Mobile */}
+        <div className="md:hidden mt-12 mb-6 text-center">
+          <p className="font-black text-[10px] uppercase opacity-50 mb-1">
+            Developed By
+          </p>
+          <p
+            className={`font-black text-xs uppercase tracking-widest border-b-2 ${isDarkMode ? "border-white" : "border-black"} inline-block`}
+          >
+            M. Ridho Febrian
+          </p>
+        </div>
       </main>
     </div>
   );
